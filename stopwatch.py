@@ -16,6 +16,9 @@ sec = last.tm_sec - now.tm_sec
 if mins < 0:
     hour -= 1
     mins += 60
+if sec < 0:
+    mins -= 1
+    sec += 60
 
 print("{} 분".format(hour*60 + mins))
 print("{} 초".format(sec))
