@@ -5,6 +5,10 @@ Time spent is measured using python.
 
 ![](./face.png)
 
+## Create Reason
+
+While i am studying TOEIC, i want to stopwatch.
+
 ## Usage example
 
 This is start message. Please  press any key and 'enter' key!
