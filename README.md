@@ -9,21 +9,23 @@ Time spent is measured using python.
 
 This is start message. Please  press any key and 'enter' key!
 
-> input("시작하기 위해서 아무키나 입력하세요")
+> input("In order to start stopwatch, Please press any key. : ")
 > now = time.gmtime(time.time())
 
 This is end message. Please press any key and 'enter' key!
 
->input("끝내기 위해서 아무키나 입력하세요")
->last = time.gmtime(time.time())
+> input("In order to end stopwatch, Please press any key. : ")
+> last = time.gmtime(time.time())
 
 Finally, press any key and 'enter' key, so the program will end.
 
 
 ## Release History
 
+* 0.1.1
+	* Translate Korean into English.
 * 0.1.0
-	* The first proper release
+  * The first proper release
 * 0.0.1
     * Work in progress
 
