@@ -4,7 +4,7 @@
 
 Time spent is measured using python.
 
-![](../face.png)
+![](https://github.com/cocopambag/Stopwatch/face.png)
 
 ## 설치 방법
 
