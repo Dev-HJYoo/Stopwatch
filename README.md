@@ -14,11 +14,13 @@ While i am studying TOEIC, i want to stopwatch.
 This is start message. Please  press any key and 'enter' key!
 
 > input("In order to start stopwatch, Please press any key. : ")
+
 > now = time.gmtime(time.time())
 
 This is end message. Please press any key and 'enter' key!
 
 > input("In order to end stopwatch, Please press any key. : ")
+
 > last = time.gmtime(time.time())
 
 Finally, press any key and 'enter' key, so the program will end.
