@@ -12,29 +12,44 @@ input("In order to start stopwatch, Please press any key. : ")
 
 now = time.gmtime(time.time())
 
-input("In order to end stopwatch, Please press any key. : ")
+i = 0
 
-last = time.gmtime(time.time())
+# program start !
+while True:
+    temp = input("if you want to excute Lab, Please press 'q' key\nIn order to end stopwatch, Please press any key. : ")
+    
+    last = time.gmtime(time.time())
 
-# hour, minutes, second
-# variable name of "minutes" is "mins" because "min" is keyword.
-hour = last.tm_hour - now.tm_hour
-mins = last.tm_min - now.tm_min
-sec = last.tm_sec - now.tm_sec
+    # hour, minutes, second
+    # variable name of "minutes" is "mins" because "min" is keyword.
+    hour = last.tm_hour - now.tm_hour
+    mins = last.tm_min - now.tm_min
+    sec = last.tm_sec - now.tm_sec
 
-# if minutes over negative number
-if mins < 0:
-    hour -= 1
-    mins += 60
+    # if minutes over negative numbere
+    if mins < 0:
+        hour -= 1
+        mins += 60
 
-# if second over negative number    
-if sec < 0:
-    mins -= 1
-    sec += 60
+    # if second over negative number    
+    if sec < 0:
+        mins -= 1
+        sec += 60
 
-# Print minutes and seconds
-print("{} minutes".format(hour*60 + mins))
-print("{} seconds".format(sec))
+     
+    i += 1
+
+    # in case that input is 'q'
+    if temp == 'q':
+        print("Lab {}".format(i))
+        print("{} minutes".format(hour*60 + mins))
+        print("{} seconds".format(sec))
+        continue
+    
+    # Print minutes and seconds
+    print("{} minutes".format(hour*60 + mins))
+    print("{} seconds".format(sec))
+    break
 
 # This is wait for display
 input()

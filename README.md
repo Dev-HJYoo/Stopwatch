@@ -15,12 +15,17 @@ This is start message. Please  press any key and 'enter' key!
 
 > input("In order to start stopwatch, Please press any key. : ")
 
+
+"now" value is checking time now.
 > now = time.gmtime(time.time())
 
-This is end message. Please press any key and 'enter' key!
+This is end message and executing Lab message. if you want to execute Lab function, Please press 'q' key 
 
-> input("In order to end stopwatch, Please press any key. : ")
+"temp" value is checking whether you want to quit program or excute Lab function.
 
+> temp = input("if you want to excute Lab, Please press 'q' key\nIn order to end stopwatch, Please press any key. : ")
+
+"last" value is checking final time.
 > last = time.gmtime(time.time())
 
 Finally, press any key and 'enter' key, so the program will end.
@@ -28,6 +33,8 @@ Finally, press any key and 'enter' key, so the program will end.
 
 ## Release History
 
+* 0.2.0
+	* Add Lab function
 * 0.1.1
 	* Translate Korean into English.
 * 0.1.0
