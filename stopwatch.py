@@ -16,7 +16,7 @@ i = 0
 
 # program start !
 while True:
-    temp = input("if you want to excute Lab, Please press 'q' key\nIn order to end stopwatch, Please press any key. : ")
+    temp = input("if you want to excute Lab, Please press enter key\nIn order to end stopwatch, Please press any key. : ")
     
     last = time.gmtime(time.time())
 
@@ -39,8 +39,8 @@ while True:
      
     i += 1
 
-    # in case that input is 'q'
-    if temp == 'q':
+    # in case that input is blank
+    if temp == "":
         print("Lab {}".format(i))
         print("{} minutes".format(hour*60 + mins))
         print("{} seconds".format(sec))
